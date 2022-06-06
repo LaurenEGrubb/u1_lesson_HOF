@@ -8,18 +8,16 @@ In this lesson, we'll learn all about High Order Functions and their usage in ja
 ## Getting Started
 - Fork and Clone
 - Open this repo in your code editor
-- Touch an `index.js` file
+- Create an `index.js` file via the command line
 
 ## Objectives
-  - Review "for loops" and the "forEach" method
-  - Learn common array methods .map(), .filter(), and .reduce()
-  - Learn how to chain these methods
+- Review "for loops" and the "forEach" method
+- Learn common array methods .map(), .filter(), and .reduce()
+- Learn how to chain these methods
   
-## Lesson Instructions
-In JavaScript, functions are first-class citizens, which means, we can pass functions around like values. **Higher Order Functions** are functions that pass a function as an argument or return a function as a value.
+**Higher Order Functions** are functions that pass a function as an argument or return a function as a value.
 
 ### High Order Functions w/ Food!
-
 ![map, filter, reduce with emoji](https://i.redd.it/yf7rw3pjiapx.jpg)
 
 ### Review: [for loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)!
@@ -36,7 +34,7 @@ for (let i = 0; i < numbers.length; i++) {
 
 ### [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-- You can call the forEach method on any array and pass it a function to execute on each item in the array.
+- You can call the `.forEach()` method on any array and pass it a function to execute on each item in the array.
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5]
@@ -50,7 +48,7 @@ numbers.forEach((element) => {
 
 ### [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-`.map()` will take an array, and produce a new array with new values. In a function you define what each value in the array should be based on an existing item.
+`.map()` will loop over a given array and produce a new array with new values based on logic you define in the function passed into `.map()`.
 
 ```js
 const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange']
@@ -72,7 +70,7 @@ const wordsWrappedInX = words.map((word) => {
 
 ### [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-`.filter()` will take an array, and produce a new array that only contains some of the items. Each item in the array runs through a function. If the function returns true, the item is included in the new array.
+`.filter()` will loop through a provided array and produce a new array that only contains some of the items. Each item in the array runs through a function. If the function returns true, the item is included in the new array.
 
 ```js
 const words = ['the', 'world', 'is', 'round', 'like', 'an', 'orange']
@@ -91,7 +89,7 @@ const wordsThatStartWithR = words.filter((word) => { return word[0] === 'r' })
 
 
 ### [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-- The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+- The `.reduce()` method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value that is returned.
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5]
@@ -103,10 +101,10 @@ console.log(sum)
 // 15
 ```
 
-__NOTE__ The single value returned can be an object or array. Often in examples it's a number or string but you can return anything. Reduce is extremely powerful and all other iterators can be written using it. It's tough to wrap one's mind around so don't worry if this one is inscrutable for now. We'll revisit it now and again...and again and again.
+__NOTE__ The single value returned can be an object or array. Often in examples it is a number or string but you can return anything. Reduce is extremely powerful and all other iterators can be written using it.
 
 ### [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
-- The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. If at least one element in the array passes the test of the provided function `true` is returned.  If none of the elements pass the test `false` is returned.
+- The `.some()` method tests whether at least one element in the provided array satisfies the conditions of the provided function. If at least one element in the array satisfies the conditions of the provided function, `true` is returned.  If none of the elements pass the test, `false` is returned.
 
 ```javascript
 const array = [1, 2, 3, 4, 5];
@@ -178,7 +176,7 @@ console.log(result)
 Write your own `map` and `filter` using only `reduce` (i.e. no for loops)
 
 ## Lesson Recap
-We learned how we can use forEach on each item in an array. We also learned about the all-important array methods .map(), .filter(), and .reduce(). We also learned how to use method chaining to more efficiently affect our data.
+We learned how we can use `.forEach()` on each item in an array. We also learned about the all-important array methods `.map()`, `.filter()`, and `.reduce()`. We also learned how to use method chaining to more efficiently affect our data.
 
 ## Resources
  - [MDN: forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
