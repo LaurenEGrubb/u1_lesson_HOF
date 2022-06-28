@@ -6,6 +6,7 @@
 In this lesson, we'll learn all about High Order Functions and their usage in javascript.
 
 ## Getting Started
+
 - `fork` and `clone`
 - Open this repo in your code editor with `code .`
 - Create an `index.js` file via the command line
